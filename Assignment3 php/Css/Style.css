@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: calc(12px + 1vw);
+    color: #333333;
+    margin: 0;
+    background-color: #f9f5ee;
+  }
+
+header {
+    background-color: #161213;
+    font-family: "Open Sans", sans-serif;
+    color: #f9f5ee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  header nav {
+    margin: 0 1.5rem;
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  header nav a {
+    color: #f9f5ee;
+    text-decoration: none;
+  }
+  
+  header img {
+    object-fit: contain;
+    max-width: 200px;
+  }
+  
+  header ul {
+    list-style-type: none;
+    padding-inline: 0;
+    display: inline;
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    color: #f9f5ee;
+    background-color: #161213;
+    width: 100%;
+  }
+  
+  .footer-top {
+    margin: 0 1.5rem;
+    padding: 0.8rem 0 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer li {
+    display: inline;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #f9f5ee;
+  }
+  
+  footer img {
+    object-fit: contain;
+    width: 70%;
+    max-width: 200px;
+  }
+  
+  .footer-top figcaption {
+    font-size: 0.5rem;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer-bottom {
+    margin: 0 1.5rem;
+    text-align: center;
+    margin-block: 0;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid #f9f5ee;
+    line-height: 1;
+  }
+  
+  .footer-bottom small {
+    font-size: 0.4rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .footer-top,
+    footer figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer img {
+      width: 50%;
+    }
+  
+    .footer-right {
+      align-items: center;
+      width: 75%;
+    }
+  
+    #subscribe-form {
+      margin-top: 0.5rem;
+      width: 70%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #subscribe-form input {
+      font-size: 0.7rem;
+      padding: 0.2em 0.5em;
+      margin-bottom: 0.3em;
+    }
+    #subscribe-form button {
+      font-size: 0.7rem;
+      padding: 0.2em 0.8em;
+    }
+  }
